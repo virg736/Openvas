@@ -98,6 +98,8 @@ Identifiants par défaut :
 
 ## 6. Lancement d’un Scan
 
+Pour lancer un scan de vulnérabilités avec OpenVas, suivez les étapes ci-dessous
+
 1. Aller dans `Scans > Tasks`
 2. Cliquer sur `Wizard`
 3. Remplir les champs :
