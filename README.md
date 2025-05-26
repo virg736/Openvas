@@ -27,8 +27,6 @@ Assurez-vous que les deux machines virtuelles (Kali Linux et OpenVAS) soient sur
 - Sélectionner : `Réseau interne`
 - Nom du réseau : `BUREAUTIQUE`
 
-_Image ici : paramétrage VirtualBox_
-
 ---
 
 ## 2. Configuration IP statique sur OpenVAS
@@ -62,7 +60,7 @@ sudo ip addr add 192.168.56.20/24 dev eth0
 sudo ip link set eth0 up
 ```
 
-_Image ici : configuration réseau Kali_
+![Configuration IP statique sur Kali](openvas3.PNG)
 
 ---
 
