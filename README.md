@@ -41,7 +41,7 @@ _Image ici : paramétrage VirtualBox_
 - Saisir le DNS : `8.8.8.8`
 - Cliquer sur `Save` pour enregistrer la configuration.
 
-_Image ici : configuration IP OpenVAS_
+![Vue de la configuration OpenVAS](Openvas.PNG)
 
 ---
 
