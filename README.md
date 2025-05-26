@@ -23,7 +23,7 @@ Reproduction interdite sans autorisation.</i></p>
 3. [Vérification de la connectivité](#3-vérification-de-la-connectivité)
 4. [Configuration IP statique sur Kali Linux](#4-configuration-ip-statique-sur-kali-linux)
 5. [Accès à l’interface web d’OpenVAS](#5-accès-à-linterface-web-dopenvas)
-6. [Lancement d’un Scan](#6-lancement-dun-scan)
+6. [Lancement d’un scan](#6-lancement-dun-scan)
 7. [Export d’un Rapport](#7-export-dun-rapport)
 8. [Résultat attendu](#8-résultat-attendu)
 9. [Auteur](#auteur)
