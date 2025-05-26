@@ -1,7 +1,7 @@
 # OpenVAS — Audit de vulnérabilité avec Kali Linux
 
 <p align="center">
-<img src="OpenvasKaliLinux.PNG" alt="Présentation du projet OpenVAS avec Kali Linux" width="700">
+<img src="OpenvasKaliLinux.PNG" alt="Présentation du projet OpenVAS avec Kali Linux" style="max-width: 100%;">
 </p>
 
 <p align="center"><i>© 2025 <strong>virg736</strong> — Tous droits réservés.<br>
@@ -11,7 +11,6 @@ Reproduction interdite sans autorisation.</i></p>
 <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT">
 <img src="https://img.shields.io/badge/stability-stable-brightgreen" alt="Stabilité: stable">
 </p>
-
 ---
 
 ## Projet : Analyse de Vulnérabilités avec OpenVAS et Kali Linux
