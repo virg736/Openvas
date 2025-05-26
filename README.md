@@ -32,7 +32,7 @@ Reproduction interdite sans autorisation.</i></p>
 
 ## 1. Configuration du Réseau dans VirtualBox
 
-Assurez-vous que les deux machines virtuelles (Kali Linux et OpenVAS) soient sur le même réseau interne.
+Assurez-vous que les deux machines virtuelles (Kali Linux et OpenVAS) sont connectées au même réseau interne.
 
 **Étapes :**
 - Ouvrir les paramètres de chaque VM
