@@ -1,115 +1,133 @@
-OpenVAS — Audit de vulnérabilité avec Kali Linux
-Projet : Analyse de Vulnérabilités avec OpenVAS et Kali Linux
+# OpenVAS — Audit de vulnérabilité avec Kali Linux
 
-Sommaire
-Configuration du Réseau dans VirtualBox
-Configuration IP statique sur OpenVAS
-Vérification de la connectivité
-Configuration IP statique sur Kali Linux
-Accès à l’interface web d’OpenVAS
-Lancement d’un Scan
-Export d’un Rapport
-Résultat attendu
+## Projet : Analyse de Vulnérabilités avec OpenVAS et Kali Linux
 
+---
 
-1. Configuration du Réseau dans VirtualBox
+## Sommaire
+1. [Configuration du Réseau dans VirtualBox](#1-configuration-du-réseau-dans-virtualbox)
+2. [Configuration IP statique sur OpenVAS](#2-configuration-ip-statique-sur-openvas)
+3. [Vérification de la connectivité](#3-vérification-de-la-connectivité)
+4. [Configuration IP statique sur Kali Linux](#4-configuration-ip-statique-sur-kali-linux)
+5. [Accès à l’interface web d’OpenVAS](#5-accès-à-linterface-web-dopenvas)
+6. [Lancement d’un Scan](#6-lancement-dun-scan)
+7. [Export d’un Rapport](#7-export-dun-rapport)
+8. [Résultat attendu](#8-résultat-attendu)
+9. [Auteur](#auteur)
+
+---
+
+## 1. Configuration du Réseau dans VirtualBox
+
 Assurez-vous que les deux machines virtuelles (Kali Linux et OpenVAS) soient sur le même réseau interne.
 
-Étapes :
+**Étapes :**
+- Ouvrir les paramètres de chaque VM
+- Onglet Réseau
+- Sélectionner : `Réseau interne`
+- Nom du réseau : `BUREAUTIQUE`
 
-Ouvrir les paramètres de chaque VM
-Onglet Réseau
-Sélectionner : Réseau interne
-Nom du réseau : BUREAUTIQUE
+_Image ici : paramétrage VirtualBox_
 
-Image ici (paramétrage VirtualBox)
+---
 
+## 2. Configuration IP statique sur OpenVAS
 
-2. Configuration IP statique sur OpenVAS
-Étapes dans l’interface Greenbone :
+**Étapes dans l’interface Greenbone :**
+- Aller dans : `Network > Interfaces > eth0`
+- Activer `IPv4`
+- Choisir `Static IP`
+- Saisir l’adresse IP : `192.168.56.10/24`
+- Saisir le DNS : `8.8.8.8`
+- Cliquer sur `Save` pour enregistrer la configuration.
 
-Aller dans : Network > Interfaces > eth0
-Activer IPv4
-Choisir Static IP
-Saisir l’adresse IP :
+_Image ici : configuration IP OpenVAS_
 
-192.168.56.10/24
+---
 
-Saisir le DNS :
+## 3. Vérification de la connectivité
 
-8.8.8.8
+Depuis la VM Kali, ouvrez un terminal :
 
-Cliquer sur Save pour enregistrer la configuration.
-
-Image ici (paramétrage réseau dans Greenbone)
-
-
-3. Vérification de la connectivité
-Depuis la VM Kali, ouvrez un terminal et testez la connexion vers OpenVAS :
-
+```bash
 ping 192.168.56.10
+```
 
+---
 
-4. Configuration IP statique sur Kali Linux
-Attribuez une IP compatible :
+## 4. Configuration IP statique sur Kali Linux
 
+```bash
 sudo ip addr add 192.168.56.20/24 dev eth0
-
 sudo ip link set eth0 up
+```
 
-Image ici (commande dans terminal Kali)
+_Image ici : configuration réseau Kali_
 
+---
 
-5. Accès à l’interface web d’OpenVAS
-Ouvrez Firefox depuis la VM Kali et accédez à :
+## 5. Accès à l’interface web d’OpenVAS
 
+Accédez à l’interface via Firefox :
+
+```
 https://192.168.56.10
+```
 
-Ignorez le message SSL, puis connectez-vous :
+Identifiants par défaut :
 
-Identifiant : admin
+- **Utilisateur** : admin
+- **Mot de passe** : toor
 
-Mot de passe : toor
+_Image ici : accès interface web_
 
-Image ici (interface web OpenVAS)
+---
+
+## 6. Lancement d’un Scan
+
+1. Aller dans `Scans > Tasks`
+2. Cliquer sur `Wizard`
+3. Remplir les champs :
+- Nom : `scan_vulnérabilités`
+- Cible : `192.168.56.1/24`
+- Scan Config : `Full and fast`
+- Start time : `Démarrer immédiatement`
+4. Cliquer sur `Create`
+
+_Image ici : création d’un scan_
+
+---
+
+## 7. Export d’un Rapport
+
+1. Aller dans `Scans > Reports`
+2. Sélectionner un rapport
+3. Choisir le format : `PDF`
+4. Cliquer sur `OK` pour générer et télécharger
+
+_Image ici : export du rapport_
+
+---
+
+## 8. Résultat attendu
+
+- Détection des machines actives
+- Identification des vulnérabilités :
+- Critiques
+- Hautes
+- Moyennes
+- Faibles
+- Génération d’un rapport lisible et exportable
+
+---
+
+## Auteur
 
 
-6. Lancement d’un Scan
-Aller dans l’onglet Scans > Tasks
-Cliquer sur Wizard
-Remplir les champs :
-Nom : scan_vulnérabilités
-Cible : 192.168.56.1/24
-Scan Config : Full and fast
-Start time : Démarrer immédiatement
-Cliquer sur Create
-
-Image ici (création d’un scan)
 
 
-7. Export d’un Rapport
-Aller dans l’onglet Scans > Reports
-Cliquer sur le rapport voulu
-Choisir le format :
-
-PDF
-
-Cliquer sur OK pour le générer et le télécharger.
-
-Image ici (export du rapport)
 
 
-8. Résultat attendu
-Détection des machines actives
-Identification des vulnérabilités :
-Critiques
-Hautes
-Moyennes
-Faibles
-Génération d’un rapport professionnel
-
-
-Auteur
 
 
 
