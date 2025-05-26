@@ -139,9 +139,16 @@ Pour exporter un rapport :
 
 ---
 
-## Auteur
-*Virginie Lechene – Formation en cybersécurité & test d’intrusion*
+## 9. Avertissement légal
+
+> Ce projet est exclusivement destiné à des fins éducatives, dans le cadre de la formation à la cybersécurité.
+> L’auteure ne cautionne ni n’autorise l’utilisation de ces techniques en dehors d’un cadre légal strictement défini.
+> Toute utilisation non autorisée est interdite et relève de la seule responsabilité de l’utilisateur.
+
+## 10. Auteur / Droits
+
 © 2025 Virginie Lechene — Tous droits réservés.
+Reproduction interdite sans autorisation.
 
 
 
