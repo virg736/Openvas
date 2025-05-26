@@ -90,15 +90,16 @@ https://192.168.56.10
 
 Identifiants par défaut :
 
-- **Utilisateur** : admin **Mot de passe** : toor
+- **Utilisateur** : admin
+- **Mot de passe** : toor
 
 ![Accès à l’interface web d’OpenVAS](openvas5.PNG)
 
 ---
 
-## 6. Lancement d’un Scan
+## 6. Lancement d’un scan
 
-Pour lancer un scan de vulnérabilités avec OpenVas, suivez les étapes ci-dessous
+Pour lancer un scan de vulnérabilités avec OpenVas :
 
 1. Aller dans `Scans > Tasks`
 2. Cliquer sur `Wizard`
@@ -114,9 +115,9 @@ Pour lancer un scan de vulnérabilités avec OpenVas, suivez les étapes ci-dess
 
 ---
 
-## 7. Export d’un Rapport
+## 7. Export d’un rapport
 
-Pour exporter un rappot :
+Pour exporter un rapport :
 
 1. Aller dans `Scans > Reports`
 2. Sélectionner un rapport
