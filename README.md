@@ -1,119 +1,115 @@
-# Openvas
-Audit de vulnérabilité sur openvas
+OpenVAS — Audit de vulnérabilité avec Kali Linux
+Projet : Analyse de Vulnérabilités avec OpenVAS et Kali Linux
+
+Sommaire
+Configuration du Réseau dans VirtualBox
+Configuration IP statique sur OpenVAS
+Vérification de la connectivité
+Configuration IP statique sur Kali Linux
+Accès à l’interface web d’OpenVAS
+Lancement d’un Scan
+Export d’un Rapport
+Résultat attendu
 
 
-# Projet : Analyse de Vulnérabilités avec OpenVAS et Kali Linux
+1. Configuration du Réseau dans VirtualBox
+Assurez-vous que les deux machines virtuelles (Kali Linux et OpenVAS) soient sur le même réseau interne.
 
-## 1. Configuration du Réseau dans VirtualBox
+Étapes :
 
-Assurez-vous que les deux machines virtuelles (Kali Linux et OpenVAS) soient dans le même réseau.
+Ouvrir les paramètres de chaque VM
+Onglet Réseau
+Sélectionner : Réseau interne
+Nom du réseau : BUREAUTIQUE
 
-### Étapes :
+Image ici (paramétrage VirtualBox)
 
-- Ouvrir les paramètres de chaque VM (dans VirtualBox)
-- Aller dans l’onglet **Réseau**
-- Sélectionner : `Réseau interne`
-- Nom du réseau : `BUREAUTIQUE`
 
----
+2. Configuration IP statique sur OpenVAS
+Étapes dans l’interface Greenbone :
 
-## 2. Configuration IP statique sur OpenVAS (Greenbone OS)
+Aller dans : Network > Interfaces > eth0
+Activer IPv4
+Choisir Static IP
+Saisir l’adresse IP :
 
-### Étapes dans l’interface Greenbone :
-
-1. Aller dans : `Network > Interfaces > eth0`
-2. Activer `IPv4`
-3. Choisir `Static IP`
-4. Saisir l’adresse IP :
-
-```text
 192.168.56.10/24
 
----
+Saisir le DNS :
 
-### 5. Saisir le DNS :
-
-```text
 8.8.8.8
 
----
+Cliquer sur Save pour enregistrer la configuration.
 
-## 6. Enregistrer et appliquer les paramètres
+Image ici (paramétrage réseau dans Greenbone)
 
-Après avoir saisi l’adresse IP statique et le DNS, cliquez sur `Save` pour enregistrer la configuration réseau sur la VM OpenVAS.
 
----
+3. Vérification de la connectivité
+Depuis la VM Kali, ouvrez un terminal et testez la connexion vers OpenVAS :
 
-## 3. Vérification de la connectivité
-
-Depuis la VM Kali, ouvrez un terminal et testez la connexion vers la VM OpenVAS :
-
-```bash
 ping 192.168.56.10
 
 
-## 4. Configuration IP statique sur la VM Kali Linux
+4. Configuration IP statique sur Kali Linux
+Attribuez une IP compatible :
 
-Attribuez une IP compatible avec celle d’OpenVAS :
-
-```bash
 sudo ip addr add 192.168.56.20/24 dev eth0
+
 sudo ip link set eth0 up
 
+Image ici (commande dans terminal Kali)
 
-## 5. Accès à l’interface web d’OpenVAS
 
+5. Accès à l’interface web d’OpenVAS
 Ouvrez Firefox depuis la VM Kali et accédez à :
 
-```text
 https://192.168.56.10
 
-Ignorez le message d’avertissement SSL et connectez-vous avec les identifiants suivants :
+Ignorez le message SSL, puis connectez-vous :
 
-Identifiant : ....
-Mot de passe : ....
+Identifiant : admin
 
-----
+Mot de passe : toor
 
-## 6. Lancement d’un Scan
+Image ici (interface web OpenVAS)
+
+
+6. Lancement d’un Scan
 Aller dans l’onglet Scans > Tasks
-
-Cliquer sur Wizard pour créer un scan rapide
-
+Cliquer sur Wizard
 Remplir les champs :
-
-Nom du scan : scan_vulnérabilités
-
+Nom : scan_vulnérabilités
 Cible : 192.168.56.1/24
-
 Scan Config : Full and fast
-
 Start time : Démarrer immédiatement
-
 Cliquer sur Create
 
-----
+Image ici (création d’un scan)
 
-## 7. Export d’un Rapport
+
+7. Export d’un Rapport
 Aller dans l’onglet Scans > Reports
-
 Cliquer sur le rapport voulu
-
-Sélectionner le format :
+Choisir le format :
 
 PDF
 
-Cliquer sur OK pour générer et télécharger le rapport
+Cliquer sur OK pour le générer et le télécharger.
 
----
+Image ici (export du rapport)
 
-##  8. Résultat attendu
 
-Détection des machines actives sur le réseau
+8. Résultat attendu
+Détection des machines actives
+Identification des vulnérabilités :
+Critiques
+Hautes
+Moyennes
+Faibles
+Génération d’un rapport professionnel
 
-Identification des vulnérabilités (critique, haute, moyenne, faible)
 
-Rapport exportable et réutilisable pour présentation ou archivage
+Auteur
 
 
 
