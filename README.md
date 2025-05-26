@@ -38,13 +38,15 @@ Assurez-vous que les deux machines virtuelles (Kali Linux et OpenVAS) soient sur
 ## 2. Configuration IP statique sur OpenVAS
 
 **Étapes dans l’interface Greenbone :**
+
 - Aller dans : `Network > Interfaces > eth0`
 - Activer `IPv4`
-- Choisir `Static IP`
-- Saisir l’adresse IP : `192.168.56.10/24`
-- Saisir le DNS : `8.8.8.8`
-- Cliquer sur `Save` pour enregistrer la configuration.
-
+- **Descendre sur `Static IP: [disabled]`**
+- Appuyer sur **Entrée** → choisir **enabled**
+- Renseigner :`192.168.56.10/24`
+- Saisir le DNS :`8.8.8.8`
+- Cliquer sur **Save** pour enregistrer la configuration.
+  
 ![Vue de la configuration OpenVAS](Openvas.PNG)
 
 ---
