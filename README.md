@@ -92,7 +92,8 @@ Identifiants par défaut :
 - Start time : `Démarrer immédiatement`
 4. Cliquer sur `Create`
 
-_Image ici : création d’un scan_
+![Lancement d’un Scan](openvas8.PNG)
+
 
 ---
 
@@ -103,7 +104,7 @@ _Image ici : création d’un scan_
 3. Choisir le format : `PDF`
 4. Cliquer sur `OK` pour générer et télécharger
 
-_Image ici : export du rapport_
+![Export d’un Rapport](openvas9.PNG)
 
 ---
 
