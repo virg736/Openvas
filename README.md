@@ -121,6 +121,9 @@ Identifiants par défaut :
 ---
 
 ## Auteur
+*Virginie Lechene – Formation en cybersécurité & test d’intrusion*
+© 2025 Virginie Lechene — Tous droits réservés.
+
 
 
 
