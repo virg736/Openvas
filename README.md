@@ -116,6 +116,8 @@ Pour lancer un scan de vulnérabilités avec OpenVas, suivez les étapes ci-dess
 
 ## 7. Export d’un Rapport
 
+Pour exporter un rappot :
+
 1. Aller dans `Scans > Reports`
 2. Sélectionner un rapport
 3. Choisir le format : `PDF`
@@ -128,8 +130,7 @@ Pour lancer un scan de vulnérabilités avec OpenVas, suivez les étapes ci-dess
 ## 8. Résultat attendu
 
 - Détection des machines actives
-- Identification des vulnérabilités :
-- Critiques
+- Classification des vulnérabilités : 
 - Hautes
 - Moyennes
 - Faibles
