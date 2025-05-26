@@ -1,8 +1,8 @@
 # OpenVAS — Audit de vulnérabilité avec Kali Linux
 
 <p align="center">
-<img src="images/presentation.jpg" alt="Présentation du projet OpenVAS avec Kali Linux" width="600"/>
-</p>
+<img src="images/presentation.jpg" alt="Présentation%20du%20projet%20OpenVAS%20avec%20Kali%20Linux" width="600"/>
+
 
 <p align="center"><i>Figure 1 : Présentation du projet OpenVAS sur GitHub</i></p>
 
