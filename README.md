@@ -69,6 +69,7 @@ ping 192.168.56.10
 ---
 
 ## 4. Configuration IP statique sur Kali Linux
+Exécutez les commandes suivantes dans le terminal de la VM Kali pour configurer une IP statique :
 
 ```bash
 sudo ip addr add 192.168.56.20/24 dev eth0
@@ -81,7 +82,7 @@ sudo ip link set eth0 up
 
 ## 5. Accès à l’interface web d’OpenVAS
 
-Accédez à l’interface via Firefox :
+Ouvrez Firefox et accédez à l’interface via l'adresse suivante :
 
 ```
 https://192.168.56.10
@@ -89,8 +90,7 @@ https://192.168.56.10
 
 Identifiants par défaut :
 
-- **Utilisateur** : admin
-- **Mot de passe** : toor
+- **Utilisateur** : admin **Mot de passe** : toor
 
 ![Accès à l’interface web d’OpenVAS](openvas5.PNG)
 
