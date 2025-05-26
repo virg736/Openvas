@@ -77,7 +77,7 @@ Identifiants par défaut :
 - **Utilisateur** : admin
 - **Mot de passe** : toor
 
-_Image ici : accès interface web_
+![Accès à l’interface web d’OpenVAS](openvas5.PNG)
 
 ---
 
