@@ -1,11 +1,10 @@
 # OpenVAS — Audit de vulnérabilité avec Kali Linux
-# OpenVAS – Audit de vulnérabilité avec Kali Linux
 
 <p align="center">
 <img src="OpenvasKaliLinux.PNG" alt="Présentation du projet OpenVAS avec Kali Linux" style="max-width: 100%;">
 </p>
 
-<p align="center"><i>© 2025 <strong>virg736</strong> — Tous droits réservés.<br>
+<p align="center"><i>© 2025 <strong>virginie lechene</strong> — Tous droits réservés.<br>
 Reproduction interdite sans autorisation.</i></p>
 
 <p align="center">
