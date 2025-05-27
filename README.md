@@ -12,6 +12,12 @@ Reproduction interdite sans autorisation.</i></p>
 <img src="https://img.shields.io/badge/stability-stable-brightgreen" alt="Stabilité: stable">
 </p>
 
+### Licence des visuels
+
+Les visuels de ce dépôt sont protégés par la licence [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
+Voir le fichier [Licence-visuels.md](./Licence-visuels.md) pour les détails.
+
+[![Licence: CC BY-ND 4.0](https://licensebuttons.net/l/by-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nd/4.0/)
 
 ## Projet : Analyse de Vulnérabilités avec OpenVAS et Kali Linux
 
